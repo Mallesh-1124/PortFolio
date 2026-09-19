@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallesh Kolipaka | Python Backend & Full Stack Developer</title>
+    <meta name="description" content="Mallesh Kolipaka — Python Backend & Full Stack Developer building scalable web applications, AI-powered platforms and real-world software solutions.">
+    <meta property="og:title" content="Mallesh Kolipaka | Python Backend & Full Stack Developer">
+    <meta property="og:description" content="Building scalable web applications, AI-powered platforms and real-world software solutions with Python, Django, Flask and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mallesh Kolipaka | Python Backend & Full Stack Developer">
+    <meta name="twitter:description" content="Building scalable web applications, AI-powered platforms and real-world software solutions.">
+    <link rel="canonical" href="https://mallesh-1124.github.io/Professional-Portfolio/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u214317617?s=40&v=4" type="image/png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader" aria-hidden="true">
+        <div class="loader-content">
+            <span class="loader-letter">M</span>
+            <span class="loader-word">Welcome!</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="bg-effects" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-blob bg-blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo" aria-label="Home">MK</a>
+            <ul class="navbar-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" class="nav-link active" data-section="home">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem" class="nav-link" data-section="about">About</a></li>
+                <li role="none"><a href="#skills" role="menuitem" class="nav-link" data-section="skills">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem" class="nav-link" data-section="projects">Projects</a></li>
+                <li role="none"><a href="#experience" role="menuitem" class="nav-link" data-section="experience">Experience</a></li>
+                <li role="none"><a href="#achievements" role="menuitem" class="nav-link" data-section="achievements">Achievements</a></li>
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav-backdrop"></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Mallesh Kolipaka</span>
+                </h1>
+                <div class="hero-role-wrap">
+                    <span class="hero-role-prefix">&gt;&nbsp;</span>
+                    <span class="hero-role" aria-live="polite"></span>
+                    <span class="hero-cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    I build backend systems, full-stack applications and AI-powered products using Python and modern web technologies.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary magnetic">View My Work</a>
+                    <a href="https://1drv.ms/b/c/984b7dcd9c4db966/IQAhKHR9DYwyTIlambAz8_tuAbFf_BAfvVlPBb8Ktm7ddqs?e=1V9IEA" class="btn btn-secondary magnetic resume-trigger" id="resume-btn" aria-label="Download resume" data-resume-url="https://1drv.ms/b/c/984b7dcd9c4db966/IQAhKHR9DYwyTIlambAz8_tuAbFf_BAfvVlPBb8Ktm7ddqs?e=1V9IEA">Download Resume</a>
+                </div>
+                <a href="#about" class="hero-scroll-link">
+                    <span>Let's Connect</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-photo-wrap">
+                    <img src="https://avatars.githubusercontent.com/u214317617?v=4" alt="Mallesh Kolipaka" class="profile-photo" id="hero-avatar">
+                    <div class="profile-photo-ring"></div>
+                </div>
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <span class="code-dot code-dot-red"></span>
+                        <span class="code-dot code-dot-yellow"></span>
+                        <span class="code-dot code-dot-green"></span>
+                        <span class="code-window-title">developer.py</span>
+                    </div>
+                    <div class="code-window-body">
+                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):
+        self.name = <span class="code-string">"Mallesh"</span>
+        self.role = <span class="code-string">"Backend Dev"</span>
+        self.stack = [
+            <span class="code-string">"Python"</span>,
+            <span class="code-string">"Django"</span>,
+            <span class="code-string">"Flask"</span>,
+            <span class="code-string">"React"</span>,
+            <span class="code-string">"MySQL"</span>,        ]
+        self.passion = <span class="code-string">"Building stuff"</span>
+
+    <span class="code-keyword">def</span> <span class="code-function">build</span>(self, idea):
+        <span class="code-keyword">return</span> self.<span class="code-function">ship</span>(idea)
+
+<span class="code-comment"># Always shipping ✨</span>
+dev = <span class="code-class">Developer</span>()</code></pre>
+                    </div>
+                </div>
+                <div class="tech-float tech-float-1"><span>Python</span></div>
+                <div class="tech-float tech-float-2"><span>Django</span></div>
+                <div class="tech-float tech-float-3"><span>React</span></div>
+                <div class="tech-float tech-float-4"><span>MySQL</span></div>
+                <div class="tech-float tech-float-5"><span>AI</span></div>
+            </div>
+        </div>
+        <div class="hero-divider"></div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">Building things that solve<br>real problems.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <div class="about-intro">
+                        <p>
+                            I'm Mallesh Kolipaka — a Python-focused developer who loves turning ideas into real-world projects. 
+                            I'm interested in building responsive, user-friendly websites and robust backend systems.
+                        </p>
+                        <p>
+                            My work spans backend architecture, full-stack web applications, AI integrations, and embedded systems. 
+                            I believe in writing code that's not just functional but maintainable — systems that scale gracefully 
+                            and interfaces that feel intuitive.
+                        </p>
+                    </div>
+                    <div class="about-tech-list">
+                        <span>Python</span><span>Django</span><span>Flask</span>
+                        <span>React</span><span>JavaScript</span><span>MySQL</span>
+                        <span>REST APIs</span><span>AI Integration</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="about-right reveal">
+                    <div class="github-preview" id="github-preview">
+                        <div class="gh-preview-header">
+                            <img src="https://avatars.githubusercontent.com/u214317617?v=4" alt="" class="gh-preview-avatar">
+                            <div class="gh-preview-info">
+                                <div class="gh-preview-name" id="gh-name">Mallesh Kolipaka</div>
+                                <div class="gh-preview-handle" id="gh-handle">@Mallesh-1124</div>
+                            </div>
+                        </div>
+                        <p class="gh-preview-bio" id="gh-bio">Passionate developer who loves turning ideas into real-world projects.</p>
+                        </div>
+                        <a href="https://github.com/Mallesh-1124" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm gh-preview-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View GitHub
+                        </a>
+                    </div>
+                    <!--
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-card-icon">⚡</div>
+                            <h3>Backend First</h3>
+                            <p>Strong foundation in server-side architecture, API design, and database optimization.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">🔗</div>
+                            <h3>Full Stack</h3>
+                            <p>End-to-end development from database to frontend, with focus on integration.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">🧩</div>
+                            <h3>Problem Solver</h3>
+                            <p>Methodical approach to debugging, optimization, and system design challenges.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-icon">📈</div>
+                            <h3>Continuous Learner</h3>
+                            <p>Constantly exploring new technologies, frameworks, and engineering practices.</p>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== JOURNEY ==================== -->
+    <section id="journey" class="journey section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 / Journey</span>
+                <h2 class="section-title">My development path.</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line reveal"></div>
+                <div class="timeline-line-progress"></div>
+                <div class="timeline-item reveal" data-year="2022">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3>Started Programming</h3>
+                        <p>Began my journey into programming with Python. Explored fundamentals, data structures, and problem-solving.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-year="2023">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h3>Python + Web Development</h3>
+                        <p>Dived deeper into Django and Flask. Built first web applications and learned about databases, APIs, and authentication.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-year="2024">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <h3>Full-Stack & Hackathons</h3>
+                        <p>Expanded to React and frontend development. Participated in hackathons, built multiple projects, and solidified full-stack skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-year="2025">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3>Advanced Projects + Internships</h3>
+                        <p>Completed virtual internships in full-stack development and RPA. Built AI-integrated applications and IoT projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" data-year="2026">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2026</span>
+                        <h3>Software Engineering Journey</h3>
+                        <p>Seeking software engineering opportunities. Focused on building production-grade systems and scaling impact through technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 / Skills</span>
+                <h2 class="section-title">Technologies I work with.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></div>
+                        <div class="skill-item"><span class="skill-icon">🦾</span><span class="skill-name">Django</span></div>
+                        <div class="skill-item"><span class="skill-icon">🌶️</span><span class="skill-name">Flask</span></div>
+                        <div class="skill-item"><span class="skill-icon">⚡</span><span class="skill-name">FastAPI</span></div>
+                        <div class="skill-item"><span class="skill-icon">🔌</span><span class="skill-name">REST APIs</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">🌐</span><span class="skill-name">HTML/CSS</span></div>
+                        <div class="skill-item"><span class="skill-icon">⚡</span><span class="skill-name">JavaScript</span></div>
+                        <div class="skill-item"><span class="skill-icon">⚛️</span><span class="skill-name">React</span></div>
+                        <div class="skill-item"><span class="skill-icon">🎨</span><span class="skill-name">Bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">🐬</span><span class="skill-name">MySQL</span></div>
+                        <div class="skill-item"><span class="skill-icon">🐘</span><span class="skill-name">PostgreSQL</span></div>
+                        <div class="skill-item"><span class="skill-icon">🍃</span><span class="skill-name">MongoDB</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">🔀</span><span class="skill-name">Git</span></div>
+                        <div class="skill-item"><span class="skill-icon">🐙</span><span class="skill-name">GitHub</span></div>
+                        <div class="skill-item"><span class="skill-icon">💻</span><span class="skill-name">VS Code</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">AI / Automation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">🤖</span><span class="skill-name">AI APIs</span></div>
+                        <div class="skill-item"><span class="skill-icon">⚙️</span><span class="skill-name">UiPath</span></div>
+                        <div class="skill-item"><span class="skill-icon">🔄</span><span class="skill-name">RPA</span></div>
+                        <div class="skill-item"><span class="skill-icon">💬</span><span class="skill-name">Prompt Integration</span></div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Engineering</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-icon">📐</span><span class="skill-name">MATLAB</span></div>
+                        <div class="skill-item"><span class="skill-icon">🎛️</span><span class="skill-name">Simulink</span></div>
+                        <div class="skill-item"><span class="skill-icon">🔧</span><span class="skill-name">ESP32</span></div>
+                        <div class="skill-item"><span class="skill-icon">🔲</span><span class="skill-name">Arduino</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04 / Projects</span>
+                <h2 class="section-title">Featured work.</h2>
+            </div>
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal" data-category="ai web" data-project="study-hub">
+                    <div class="project-image">
+                        <div class="project-placeholder study-hub-gradient">
+                            <span class="placeholder-icon">📚</span>
+                        </div>
+                        <div class="project-overlay"><span class="project-view">View Project →</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AceAI Study Hub</h3>
+                        <p>AI-powered collaborative learning platform with live video study rooms, AI teacher guidance, and session summaries. Full-stack with Next.js and Django.</p>
+                        <div class="project-tags"><span>Next.js</span><span>Django</span><span>AI</span></div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-category="iot hardware" data-project="robotic-arm">
+                    <div class="project-image">
+                        <div class="project-placeholder robotic-arm-gradient">
+                            <span class="placeholder-icon">🦾</span>
+                        </div>
+                        <div class="project-overlay"><span class="project-view">View Project →</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Camera-Assisted Wi-Fi Robotic Arm</h3>
+                        <p>ESP32-based robotic system with live video streaming, Wi-Fi control, and 3-DOF arm via Blynk app.</p>
+                        <div class="project-tags"><span>ESP32</span><span>ESP32-CAM</span><span>C++</span><span>Blynk</span></div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-category="web backend" data-project="ace-eee">
+                    <div class="project-image">
+                        <div class="project-placeholder ace-eee-gradient">
+                            <span class="placeholder-icon">🏛️</span>
+                        </div>
+                        <div class="project-overlay"><span class="project-view">View Project →</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ACE EEE Website</h3>
+                        <p>Django-based department portal with responsive Bootstrap 5 design, dynamic syllabus pages, admin panel, and email notifications.</p>
+                        <div class="project-tags"><span>Django</span><span>Python</span><span>Bootstrap</span></div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-category="web backend" data-project="flask-chat">
+                    <div class="project-image">
+                        <div class="project-placeholder flask-chat-gradient">
+                            <span class="placeholder-icon">💬</span>
+                        </div>
+                        <div class="project-overlay"><span class="project-view">View Project →</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Flask Group Chat</h3>
+                        <p>Real-time chat app with WebSocket support, passkey-protected rooms, message persistence, and user authentication.</p>
+                        <div class="project-tags"><span>Flask</span><span>SocketIO</span><span>MySQL</span></div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-category="web" data-project="weather-now">
+                    <div class="project-image">
+                        <div class="project-placeholder weather-gradient">
+                            <span class="placeholder-icon">🌤️</span>
+                        </div>
+                        <div class="project-overlay"><span class="project-view">View Project →</span></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather-Now</h3>
+                        <p>Responsive React application using Open-Meteo API for real-time weather data across any city. No API key required.</p>
+                        <div class="project-tags"><span>React</span><span>JavaScript</span><span>Open-Meteo</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== REPOS SECTION ==================== -->
+    <section id="repos" class="repos section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05 / Repositories</span>
+                <h2 class="section-title">Recent work on GitHub.</h2>
+            </div>
+            <div class="repos-grid" id="repos-grid">
+                <div class="repos-loading reveal">Loading repositories...</div>
+            </div>
+            <div class="repos-more reveal">
+                <a href="https://github.com/Mallesh-1124?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    View All Repositories →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06 / Experience</span>
+                <h2 class="section-title">Where I've worked.</h2>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item reveal">
+                    <div class="exp-header">
+                        <div class="exp-company">LS Automotives</div>
+                        <div class="exp-period">2026</div>
+                    </div>
+                    <h3 class="exp-role">Trainee — Robotics & Manufacturing</h3>
+                    <p class="exp-description">
+                        Gained hands-on experience with robotics machine operations, manufacturing processes, and industrial automation systems. 
+                        Worked alongside engineering teams to understand production workflows and quality control in an automotive environment.
+                    </p>
+                    <div class="exp-tags"><span>Robotics</span><span>Manufacturing</span><span>Automation</span></div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-header">
+                        <div class="exp-company">Virtual Internship</div>
+                        <div class="exp-period">2025</div>
+                    </div>
+                    <h3 class="exp-role">Python Full-Stack Developer</h3>
+                    <p class="exp-description">
+                        Completed an intensive virtual internship focused on Python full-stack development. Built Django applications, 
+                        implemented REST APIs, worked with databases, and deployed web applications. Developed skills in agile workflows and version control.
+                    </p>
+                    <div class="exp-tags"><span>Python</span><span>Django</span><span>REST API</span><span>Git</span></div>
+                </div>
+                <div class="exp-item reveal">
+                    <div class="exp-header">
+                        <div class="exp-company">UiPath Academy</div>
+                        <div class="exp-period">2025</div>
+                    </div>
+                    <h3 class="exp-role">RPA Developer (Training)</h3>
+                    <p class="exp-description">
+                        Completed UiPath Academy certification as an Automation Explorer. Learned robotic process automation concepts, 
+                        workflow design, and automation best practices for enterprise environments.
+                    </p>
+                    <div class="exp-tags"><span>UiPath</span><span>RPA</span><span>Automation</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS ==================== -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">07 / Achievements</span>
+                <h2 class="section-title">Recognition & milestones.</h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Python Full-Stack Developer Virtual Internship</h3>
+                    <p>Completed comprehensive training in Python, Django, REST APIs, databases, and deployment workflows.</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Pearson MePro Level 10 Expert</h3>
+                    <p>Achieved Level 10 expertise certification on Pearson's MePro learning platform, demonstrating advanced proficiency.</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🤖</div>
+                    <h3>UiPath Automation Explorer</h3>
+                    <p>Completed certification as an RPA Automation Explorer through UiPath Academy, proficient in process automation tools.</p>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">🚀</div>
+                    <h3>Hackathon Participant</h3>
+                    <p>Participated in hackathons, collaborating in teams to build working prototypes under time pressure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESEARCH ==================== -->
+    <section id="research" class="research section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">08 / Research</span>
+                <h2 class="section-title">Academic contributions.</h2>
+            </div>
+            <div class="research-paper reveal">
+                <div class="paper-label">Publication</div>
+                <h3 class="paper-title">Camera-Assisted Wi-Fi Robotic Arm</h3>
+                <p class="paper-abstract">
+                    I had the opportunity to present my research paper at the 5th National Conference on Applications of Soft Computing Techniques in Engineering (NCASCTE-2026), 
+                    organized by the Department of Electrical and Electronics Engineering, ACE Engineering College, Hyderabad
+                    <br>
+                    I'm also pleased to announce that our research work has been successfully published in the International Journal of Advanced Research in Science, 
+                    Communication and Technology (IJARSCT), Volume 6, Issue 9, March 2026.
+                </p>
+                <div class="paper-meta">
+                    <span class="paper-type">Conference Presentation</span>
+                    <span class="paper-field">Robotics / Automation</span>
+                </div>
+                <a href="https://ijarsct.co.in/Paper32704.pdf" class="btn btn-outline btn-sm" aria-label="View research publication">View Publication</a>
+            </div>
+            <br>
+            <div class="research-paper reveal">
+                <div class="paper-label">Milestone!</div>
+                <h3 class="paper-title">Modelling and Analysis of Electric Vehicle Using MATLAB</h3>
+                <p class="paper-abstract">
+                    I'm excited to share that I have successfully completed my Mini Project under the guidance of the NSIC Technical Services Centre Hyderabad.
+                    This hands-on experience helped me deepen my understanding of electric vehicle systems and simulation tools, and enhanced my technical skills in MATLAB — 
+                    a crucial step forward in my B.Tech in Electrical and Electronics Engineering!
+                </p>
+                <div class="paper-meta">
+                    <span class="paper-type">Mini Project</span>
+                    <span class="paper-field">EV / Simulation</span>
+                </div>
+                <a href="https://ijarsct.co.in/Paper32705.pdf" class="btn btn-outline btn-sm" aria-label="View research publication">View Publication</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESUME CTA ==================== -->
+    <section class="resume-cta section">
+        <div class="container">
+            <div class="resume-cta-content reveal">
+                <h2>Want the complete story?</h2>
+                <p>Download my resume for a detailed overview of my skills, experience, and projects.</p>
+                <div class="resume-cta-actions">
+                    <a href="https://1drv.ms/b/c/984b7dcd9c4db966/IQAhKHR9DYwyTIlambAz8_tuAbFf_BAfvVlPBb8Ktm7ddqs?e=1V9IEA" class="btn btn-primary magnetic" id="download-resume" download>Download Resume</a>
+                    <a href="https://1drv.ms/b/c/984b7dcd9c4db966/IQAhKHR9DYwyTIlambAz8_tuAbFf_BAfvVlPBb8Ktm7ddqs?e=1V9IEA" class="btn btn-outline" id="view-resume" download>View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">09 / Contact</span>
+                <h2 class="section-title">Let's build something useful.</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Get in touch</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.</p>
+                    <div class="contact-links">
+                        <a href="mailto:kmallesh.1124@gmail.com" class="contact-link">
+                            <span class="contact-link-icon">✉️</span>
+                            <span>kmallesh.1124@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/Mallesh-1124" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="contact-link-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mallesh-kolipaka-55397a256/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="contact-link-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic btn-full" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display:none;">Sending...</span>
+                        <span class="btn-success" style="display:none;">✓ Sent!</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">MK</span>
+                    <p>Mallesh Kolipaka<br><span class="footer-tagline">Python Backend & Full Stack Developer</span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Mallesh-1124" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mallesh-kolipaka-55397a256/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:kmallesh.1124@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Mallesh Kolipaka. Designed & built with curiosity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== PROJECT MODAL ==================== -->
+    <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">×</button>
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+    <script src="js/project-filter.js"></script>
+    <script src="js/project-modal.js"></script>
+    <script src="js/github-fetch.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
